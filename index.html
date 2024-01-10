@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="index.html" method="post">
+            <h1>Sign Up</h1>
+            <fieldset>
+             <legend>
+                <span>1</span>
+                Your Basic Info
+            </legend>
+            <label>Name:
+            <input class="form-control" type="text" name="name" id="name"/>
+            </label>
+            <label>Email:
+            <input class="form-control" type="Email" name="email" id="email"/>
+            </label>
+            <label>Password:
+            <input class="form-control" type="password" name="password" id="password"/>
+            </label>
+            <div>
+                <label>Age:</label>
+                <label>
+                    <input type="radio" name="age" value="Under 13"/>
+                    Under 13
+                </label>
+                <label>
+                    <input type="radio" name="age" value="Over 13"/>
+                    Over 13
+                </label>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <span>2</span>
+                    Your Profile
+                </legend>
+                <label>Bio:</label>
+                <textarea class="form-control" name="message" rows="3" cols="4"></textarea>
+                <label for="role">Job Role:</label>
+                <select name="role" id="role">
+                    <optgroup label="web">
+                        <option value="Front-End Developer">Front-End Developer</option>
+                        <option value="PHP Developer">PHP Developer</option>
+                        <option value="Python Developer">Python Developer</option>
+                        <option value="Rails Developer">Rails Developer</option>
+                        <option value="Web Developer">Web Developer</option>
+                        <option value="wordpress Developer">Wordpress Developer</option>
+                    </optgroup>
+                    <optgroup label="Mobile">
+                        <option value="Android Developer">Andriod Developer</option>
+                        <option value="IOS Developer">IOS Developer</option>
+                        <option value="Mobile Developer">Mobile Developer</option>
+                        </optgroup>
+                        <optgroup label="Business">
+                            <option value="Business Owner">Business Owner</option>
+                            <option value="Freelancer">Freelancer</option>
+                         </optgroup>
+                </select>
+                <div class="interest">
+                    <label>Interests:</label>
+                    <label>
+                        <input type="checkbox" name="interest" value="Development"/>
+                       Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interest" value="Design"/>
+                        Design
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interest" value="Business"/>
+                        Business
+                    </label>
+                </div>
+                <button>Sign Up</button>
+            </fieldset>  
+        </form>
+    </body>
+</html>
